@@ -4,7 +4,7 @@ mesos_version: "0.21.0"
 
 # conf file settings
 mesos_cluster_name: "mesos_cluster"
-mesos_ip: "{{ansible_default_ipv4.addresses | first}}"
+mesos_ip: "{{ansible_default_ipv4_addresses | last}}"
 mesos_hostname: "{{ inventory_hostname }}"
 mesos_master_port: "5050"
 mesos_slave_port: "5051"
